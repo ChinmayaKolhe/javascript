@@ -15,3 +15,4 @@ console.log(null===null); //true
 console.log(undefined===undefined); //true
 console.log(0===0); //true
 console.log(0===null); //false
+console.log(0===undefined); //false
