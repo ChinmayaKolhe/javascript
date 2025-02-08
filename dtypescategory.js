@@ -46,3 +46,30 @@ const myfun=function(){
 }
 //functions are objects. they are objects of the type function. (object function).
 console.log(myfun)
+
+
+//************************* */
+//stack and heap
+//stack(Primitive types) and heap(Reference types/non-primitive types)
+//stack is used for static memory allocation and heap for dynamic memory allocation, both stored in the computer's RAM .
+//Variables allocated on the stack are stored directly to the memory and access to this memory is very fast, and it's allocation is dealt with when the program is compiled.
+//Variables allocated on the heap have their memory allocated at run time and accessing this memory is a bit slower, but the heap size is only limited by the size of virtual memory .
+
+let myname="chinmaya"
+let anothername=myname
+console.log(anothername) //chinmaya
+anothername="chinu"
+console.log(anothername) //chinu
+console.log(myname) //chinmaya
+//primitive types are stored in stack memory.
+//when we change the value of anothername, myname is not changed. because they are stored in stack memory.
+let userone={
+    name:"chinmaya",
+    age:19
+}
+let usertwo=userone
+usertwo.name="chinu"
+console.log(usertwo) //{ name: 'chinu', age: 19 }
+console.log(userone) //{ name: 'chinu', age: 19 }
+//reference types are stored in heap memory.
+//when we change the value of usertwo, userone is also changed. because they are stored in heap memory.
