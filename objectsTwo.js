@@ -51,3 +51,27 @@ console.log(Object.values(tinderUser)); //Returns the values of the object
 console.log(Object.entries(tinderUser)); //Returns the key-value pairs of the object
 console.log(tinderUser.hasOwnProperty("name")); //Checking if the object has the given key
 
+const course={
+    coursename:"JS",
+    courseTeacher:"Chinmaya",
+    price:"1000"
+}
+const {courseTeacher: instructor}=course
+//console.log(courseTeacher);
+console.log(instructor); //Destructuring the object
+
+
+
+const navbar= ({company}) => {
+}
+navbar(company="tcs")
+console.log(company); //Default value of the parameter
+
+
+//Api demonstration
+// {
+//    "name":"chinu",
+//     "price":"free"
+// }
+
+
